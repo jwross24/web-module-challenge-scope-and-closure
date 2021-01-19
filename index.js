@@ -31,7 +31,7 @@ console.log(processFirstItem(['foo', 'bar'], function (str) { return str + str }
     - In counter1, the counter is declared at the function level.
     - In counter2, the counter is declared at the global level.
   2. Which of the two uses a closure? How can you tell?
-    - counter2 uses a closure because `count` is not defined in the function itself.
+    - counter1 uses a closure because we are defining a function inside another function.
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
     - counter1 could be used in a situation where you want to count the number of times
